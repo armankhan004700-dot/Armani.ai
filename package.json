@@ -1,0 +1,13 @@
+{
+  "name": "armani-ai-agent",
+  "version": "1.0.0",
+  "description": "A free browser-based AI assistant inspired by cinematic command centers.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "keywords": ["ai", "assistant", "voice", "agent"],
+  "license": "MIT"
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Armani AI Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="title">
+        <div class="reactor" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="eyebrow">Free browser agent • voice optional • local-first</p>
+        <h1 id="title">Armani AI Command Agent</h1>
+        <p class="subtitle">A cinematic, JARVIS-inspired assistant that can chat, speak, listen, run browser tools, keep notes, and guide daily tasks without paid dependencies.</p>
+        <div class="actions">
+          <button id="listenBtn">Start voice</button>
+          <button id="briefBtn" class="secondary">Morning brief</button>
+          <button id="clearBtn" class="ghost">Clear log</button>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Assistant dashboard">
+        <article class="panel chat-panel">
+          <div class="panel-heading">
+            <h2>Mission Console</h2>
+            <span id="status">Systems ready</span>
+          </div>
+          <div id="messages" class="messages" aria-live="polite"></div>
+          <form id="promptForm" class="prompt-form">
+            <input id="prompt" autocomplete="off" placeholder="Ask me to plan, calculate, summarize, note, timer, search the page..." />
+            <button type="submit">Send</button>
+          </form>
+        </article>
+
+        <aside class="side-grid">
+          <article class="panel">
+            <h2>Capabilities</h2>
+            <ul id="capabilities"></ul>
+          </article>
+          <article class="panel">
+            <h2>Memory Notes</h2>
+            <div id="notes" class="notes"></div>
+          </article>
+          <article class="panel">
+            <h2>Quick Commands</h2>
+            <div class="chips">
+              <button data-command="Create a mission plan for my day">Plan day</button>
+              <button data-command="Calculate 18% of 245">Calculate</button>
+              <button data-command="Remember my favorite suit color is red and gold">Remember</button>
+              <button data-command="Set a timer for 1 minute">Timer</button>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
